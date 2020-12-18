@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Software Testing Trends`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Ambreen Khan`,
+      summary: `who loves to do everything coding & testing.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://softwaretestingtrends.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ambysan`,
     },
   },
   plugins: [
@@ -30,6 +30,16 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+                width: 800,
+                ratio: 1.77, 
+                height: 400, 
+                related: false,
+                noIframeBorder: true
+            },
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
