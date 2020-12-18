@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/software-quality-journal",
   siteMetadata: {
     title: `Software Testing Trends`,
     author: {
